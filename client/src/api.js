@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:6969',
+  baseURL: 'https://notehub-backend.vercel.app/',
 });
 
 api.interceptors.request.use(config => {
