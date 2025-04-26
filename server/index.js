@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const authRoutes = require('./Routes/auth')
 const notesRoutes = require('./Routes/notes')
 const app = express();
-const PORT = 6969;
+const PORT = process.env.PORT || 6969
 
 dotenv.config();
 app.use(cors());
